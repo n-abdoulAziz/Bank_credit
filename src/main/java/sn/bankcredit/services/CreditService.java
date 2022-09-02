@@ -6,10 +6,9 @@ import sn.bankcredit.dto.CreditDto;
 
 public interface CreditService {
 		CreditDto saveCreditDto(CreditDto CreditDto);
-		CreditDto updateCreditDto(CreditDto client);
-		void deleteClient(CreditDto client);
-		void deleteCreditDtoByCreateNumber(String num);
-		CreditDto getCreditDto(Long id);
+		CreditDto updateCreditDto(String creditNumber, CreditDto creditdto);
+		void deleteCreditByCreateNumber(String creditNumber);
+		CreditDto getCreditDto(String num);
 		List<CreditDto> getAllCreditDtos();
 	}
 

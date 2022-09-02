@@ -4,14 +4,17 @@ import java.util.List;
 import javax.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-
+import lombok.Setter;
 import sn.bankcredit.entity.Credit;
 import sn.bankcredit.entity.Gender;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Setter
+@Getter
 public class ClientDto {
 	private Long id;
 	@NotNull
