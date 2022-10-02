@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientNotFoundException extends RuntimeException {
+public class EntityNotFoundException extends RuntimeException {
     String message;
 }
