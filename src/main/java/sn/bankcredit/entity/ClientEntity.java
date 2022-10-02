@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Client {
+public class ClientEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -36,6 +36,6 @@ public class Client {
 	@Column(nullable = false)
 	private String adress;
 	@OneToMany(mappedBy="client")
-	private List<Credit> credits;
+	private List<CreditEntity> credits;
 
 }

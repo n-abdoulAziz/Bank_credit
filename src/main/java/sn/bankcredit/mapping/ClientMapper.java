@@ -3,12 +3,11 @@ package sn.bankcredit.mapping;
 
 import org.mapstruct.Mapper;
 
-import sn.bankcredit.dto.ClientDto;
-import sn.bankcredit.entity.Client;
+import sn.bankcredit.domain.Client;
+import sn.bankcredit.entity.ClientEntity;
 
 @Mapper
 public interface ClientMapper {
-	ClientDto toClientDto(Client client);
-	Client toClient(ClientDto clientDto);
-	/* we add mapstruct depences and plugin, propertie*/
+    Client toClient(ClientEntity clientEntity);
+    ClientEntity fromClient(Client client);
 }

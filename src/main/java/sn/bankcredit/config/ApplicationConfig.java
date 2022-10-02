@@ -1,12 +1,13 @@
 package sn.bankcredit.config;
 
 
-import brave.context.log4j2.ThreadContextScopeDecorator;
-import brave.propagation.CurrentTraceContext;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
+
+import brave.context.log4j2.ThreadContextScopeDecorator;
+import brave.propagation.CurrentTraceContext;
 
 @Configuration
 public class ApplicationConfig {

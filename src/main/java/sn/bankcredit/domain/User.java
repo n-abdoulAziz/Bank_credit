@@ -1,4 +1,4 @@
-package sn.bankcredit.dto;
+package sn.bankcredit.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

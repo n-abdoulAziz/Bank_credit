@@ -12,13 +12,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Credit {
+public class CreditEntity {
 	@Id
 	private String creditNumber;
 	private Double amount;
 	private Integer duration;
 	@ManyToOne
-	private Client client;
+	private ClientEntity client;
 
 }
 
